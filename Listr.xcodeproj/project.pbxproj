@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39C00CCF1B827F60008F9BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C00CCE1B827F60008F9BAC /* AppDelegate.swift */; };
+		39C00CD11B827F60008F9BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C00CD01B827F60008F9BAC /* ViewController.swift */; };
+		39C00CD41B827F60008F9BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C00CD21B827F60008F9BAC /* Main.storyboard */; };
+		39C00CD61B827F60008F9BAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C00CD51B827F60008F9BAC /* Images.xcassets */; };
+		39C00CD91B827F60008F9BAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39C00CD71B827F60008F9BAC /* LaunchScreen.xib */; };
+		39C00CE51B827F60008F9BAC /* ListrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C00CE41B827F60008F9BAC /* ListrTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39C00CDF1B827F60008F9BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39C00CC11B827F60008F9BAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39C00CC81B827F60008F9BAC;
+			remoteInfo = Listr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39C00CC91B827F60008F9BAC /* Listr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C00CCD1B827F60008F9BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39C00CCE1B827F60008F9BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39C00CD01B827F60008F9BAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39C00CD31B827F60008F9BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39C00CD51B827F60008F9BAC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		39C00CD81B827F60008F9BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		39C00CDE1B827F60008F9BAC /* ListrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C00CE31B827F60008F9BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39C00CE41B827F60008F9BAC /* ListrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListrTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39C00CC61B827F60008F9BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C00CDB1B827F60008F9BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39C00CC01B827F60008F9BAC = {
+			isa = PBXGroup;
+			children = (
+				39C00CCB1B827F60008F9BAC /* Listr */,
+				39C00CE11B827F60008F9BAC /* ListrTests */,
+				39C00CCA1B827F60008F9BAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39C00CCA1B827F60008F9BAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39C00CC91B827F60008F9BAC /* Listr.app */,
+				39C00CDE1B827F60008F9BAC /* ListrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39C00CCB1B827F60008F9BAC /* Listr */ = {
+			isa = PBXGroup;
+			children = (
+				39C00CCE1B827F60008F9BAC /* AppDelegate.swift */,
+				39C00CD01B827F60008F9BAC /* ViewController.swift */,
+				39C00CD21B827F60008F9BAC /* Main.storyboard */,
+				39C00CD51B827F60008F9BAC /* Images.xcassets */,
+				39C00CD71B827F60008F9BAC /* LaunchScreen.xib */,
+				39C00CCC1B827F60008F9BAC /* Supporting Files */,
+			);
+			path = Listr;
+			sourceTree = "<group>";
+		};
+		39C00CCC1B827F60008F9BAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39C00CCD1B827F60008F9BAC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39C00CE11B827F60008F9BAC /* ListrTests */ = {
+			isa = PBXGroup;
+			children = (
+				39C00CE41B827F60008F9BAC /* ListrTests.swift */,
+				39C00CE21B827F60008F9BAC /* Supporting Files */,
+			);
+			path = ListrTests;
+			sourceTree = "<group>";
+		};
+		39C00CE21B827F60008F9BAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39C00CE31B827F60008F9BAC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39C00CC81B827F60008F9BAC /* Listr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39C00CE81B827F60008F9BAC /* Build configuration list for PBXNativeTarget "Listr" */;
+			buildPhases = (
+				39C00CC51B827F60008F9BAC /* Sources */,
+				39C00CC61B827F60008F9BAC /* Frameworks */,
+				39C00CC71B827F60008F9BAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Listr;
+			productName = Listr;
+			productReference = 39C00CC91B827F60008F9BAC /* Listr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39C00CDD1B827F60008F9BAC /* ListrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39C00CEB1B827F60008F9BAC /* Build configuration list for PBXNativeTarget "ListrTests" */;
+			buildPhases = (
+				39C00CDA1B827F60008F9BAC /* Sources */,
+				39C00CDB1B827F60008F9BAC /* Frameworks */,
+				39C00CDC1B827F60008F9BAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39C00CE01B827F60008F9BAC /* PBXTargetDependency */,
+			);
+			name = ListrTests;
+			productName = ListrTests;
+			productReference = 39C00CDE1B827F60008F9BAC /* ListrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39C00CC11B827F60008F9BAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Frank Desimini";
+				TargetAttributes = {
+					39C00CC81B827F60008F9BAC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					39C00CDD1B827F60008F9BAC = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 39C00CC81B827F60008F9BAC;
+					};
+				};
+			};
+			buildConfigurationList = 39C00CC41B827F60008F9BAC /* Build configuration list for PBXProject "Listr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39C00CC01B827F60008F9BAC;
+			productRefGroup = 39C00CCA1B827F60008F9BAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39C00CC81B827F60008F9BAC /* Listr */,
+				39C00CDD1B827F60008F9BAC /* ListrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39C00CC71B827F60008F9BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C00CD41B827F60008F9BAC /* Main.storyboard in Resources */,
+				39C00CD91B827F60008F9BAC /* LaunchScreen.xib in Resources */,
+				39C00CD61B827F60008F9BAC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C00CDC1B827F60008F9BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39C00CC51B827F60008F9BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C00CD11B827F60008F9BAC /* ViewController.swift in Sources */,
+				39C00CCF1B827F60008F9BAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C00CDA1B827F60008F9BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C00CE51B827F60008F9BAC /* ListrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39C00CE01B827F60008F9BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39C00CC81B827F60008F9BAC /* Listr */;
+			targetProxy = 39C00CDF1B827F60008F9BAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39C00CD21B827F60008F9BAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C00CD31B827F60008F9BAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39C00CD71B827F60008F9BAC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C00CD81B827F60008F9BAC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39C00CE61B827F60008F9BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39C00CE71B827F60008F9BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39C00CE91B827F60008F9BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Listr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		39C00CEA1B827F60008F9BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Listr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		39C00CEC1B827F60008F9BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ListrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Listr.app/Listr";
+			};
+			name = Debug;
+		};
+		39C00CED1B827F60008F9BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ListrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Listr.app/Listr";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39C00CC41B827F60008F9BAC /* Build configuration list for PBXProject "Listr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C00CE61B827F60008F9BAC /* Debug */,
+				39C00CE71B827F60008F9BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39C00CE81B827F60008F9BAC /* Build configuration list for PBXNativeTarget "Listr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C00CE91B827F60008F9BAC /* Debug */,
+				39C00CEA1B827F60008F9BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		39C00CEB1B827F60008F9BAC /* Build configuration list for PBXNativeTarget "ListrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C00CEC1B827F60008F9BAC /* Debug */,
+				39C00CED1B827F60008F9BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39C00CC11B827F60008F9BAC /* Project object */;
+}
