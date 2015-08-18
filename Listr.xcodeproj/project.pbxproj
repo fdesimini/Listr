@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		398E91D51B83F54B001F4D34 /* ListrTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398E91D41B83F54B001F4D34 /* ListrTableViewController.swift */; };
 		39C00CCF1B827F60008F9BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C00CCE1B827F60008F9BAC /* AppDelegate.swift */; };
 		39C00CD11B827F60008F9BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C00CD01B827F60008F9BAC /* ViewController.swift */; };
 		39C00CD41B827F60008F9BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C00CD21B827F60008F9BAC /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		398E91D41B83F54B001F4D34 /* ListrTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListrTableViewController.swift; sourceTree = "<group>"; };
 		39C00CC91B827F60008F9BAC /* Listr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C00CCD1B827F60008F9BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39C00CCE1B827F60008F9BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				39C00CD51B827F60008F9BAC /* Images.xcassets */,
 				39C00CD71B827F60008F9BAC /* LaunchScreen.xib */,
 				39C00CCC1B827F60008F9BAC /* Supporting Files */,
+				398E91D41B83F54B001F4D34 /* ListrTableViewController.swift */,
 			);
 			path = Listr;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398E91D51B83F54B001F4D34 /* ListrTableViewController.swift in Sources */,
 				39C00CD11B827F60008F9BAC /* ViewController.swift in Sources */,
 				39C00CCF1B827F60008F9BAC /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +415,7 @@
 				39C00CEA1B827F60008F9BAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39C00CEB1B827F60008F9BAC /* Build configuration list for PBXNativeTarget "ListrTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				39C00CED1B827F60008F9BAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
