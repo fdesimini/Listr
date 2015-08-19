@@ -50,6 +50,41 @@ class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
 
+    // added delegate method for didSelectRowAtIndexPath
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let alertViewController = UIAlertController(title: "Row Selected", message: "You've selected a row", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let okayAction = UIAlertAction(title: "Okay", style: .Default){
+            (action) in
+            println(action)
+        }
+
+        let areYouSure = UIAlertAction(title: "Meh", style: .Cancel){
+            (action) in
+            println(action)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Delete", style: .Destructive){
+            (action) in
+            println(action)
+        }
+
+
+        //adding actions to be called
+        alertViewController.addAction(okayAction)
+        alertViewController.addAction(areYouSure)
+        alertViewController.addAction(cancelAction)
+  
+        
+        
+        presentViewController(alertViewController, animated: true, completion: nil)
+        
+        }
+    
+    
+
+    
     
     /*
     // MARK: - Navigation
