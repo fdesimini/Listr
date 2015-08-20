@@ -12,7 +12,6 @@ class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelega
    
     @IBOutlet weak var tableView: UITableView!
   
-    
     var myFavouriteGames = ["Super Meat Boy","Doom","Super Mario Bros", "F Zero", "Grand Theft Auto","Donkey Kong Tropical Freeze","Last of Us","Batman Arkham Asylum","Anything but Catan"]
 
     override func viewDidLoad() {
@@ -20,7 +19,7 @@ class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelega
 
         // Do any additional setup after loading the view.
         
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+//        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     
     }
 
@@ -51,7 +50,7 @@ class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     // added delegate method for didSelectRowAtIndexPath
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let alertViewController = UIAlertController(title: "Row Selected", message: "You've selected a row", preferredStyle: UIAlertControllerStyle.Alert)
         
@@ -70,30 +69,29 @@ class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelega
             println(action)
         }
 
-
         //adding actions to be called
         alertViewController.addAction(okayAction)
         alertViewController.addAction(areYouSure)
         alertViewController.addAction(cancelAction)
-  
-        
         
         presentViewController(alertViewController, animated: true, completion: nil)
         
         }
     
-    
 
-    
-    
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "presentation"
+        {
+            let destinationVC = segue.destinationViewController as? ViewController
+            println("prepare for Segue works")
+            
+        }
     }
-    */
-
+    
 }
