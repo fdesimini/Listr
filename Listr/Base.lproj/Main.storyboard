@@ -43,7 +43,7 @@
                                             <constraint firstAttribute="height" constant="44" id="crg-i3-qsg"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -65,7 +65,7 @@
                                         </constraints>
                                         <string key="text">This is logo presented by @bitmakerlabs. The PSD comes with a plain simple logo mockup template. You can edit the logo colour and use the smart layer to apply your designs. The high-resolution makes it easy to frame specific details with close-ups.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -182,6 +182,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="companyLogo" destination="52C-dg-y4z" id="sAX-iu-UUx"/>
+                        <outlet property="copyLabel" destination="DQ9-K6-1bA" id="9A2-xw-0KF"/>
+                        <outlet property="titleLabel" destination="7Mz-As-lh6" id="4Q1-WN-UZd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

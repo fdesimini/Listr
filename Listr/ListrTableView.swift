@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate {
    
     @IBOutlet weak var tableView: UITableView!
   
@@ -57,11 +57,13 @@ class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelega
         let okayAction = UIAlertAction(title: "Okay", style: .Default){
             (action) in
             println(action)
+            
         }
 
         let areYouSure = UIAlertAction(title: "Meh", style: .Cancel){
             (action) in
             println(action)
+            
         }
         
         let cancelAction = UIAlertAction(title: "Delete", style: .Destructive){
@@ -74,7 +76,9 @@ class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelega
         alertViewController.addAction(areYouSure)
         alertViewController.addAction(cancelAction)
         
+        
         presentViewController(alertViewController, animated: true, completion: nil)
+        println("this alert box function got called")
         
         }
     
