@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var companyLogo: UIImageView!
     
     @IBOutlet weak var titleLabel: UILabel!
-    
+
+    var titleData:String?
     
     @IBOutlet weak var copyLabel: UILabel!
     
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.titleLabel.text = "New Title"
+        self.titleLabel.text = titleData
         self.copyLabel.text = "This is some text showing that we can update this on the fly"
     }
 

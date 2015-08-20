@@ -13,7 +13,9 @@ class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
   
     var myFavouriteGames = ["Super Meat Boy","Doom","Super Mario Bros", "F Zero", "Grand Theft Auto","Donkey Kong Tropical Freeze","Last of Us","Batman Arkham Asylum","Anything but Catan"]
-
+    
+//    var titleData:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -92,8 +94,12 @@ class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelega
         
         if segue.identifier == "presentation"
         {
-            let destinationVC = segue.destinationViewController as? ViewController
-            println("prepare for Segue works")
+            if let destinationVC = segue.destinationViewController as? ViewController {
+                if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell){
+                    destinationVC.titleData = myFavouriteGames[indexPath.row]
+                }
+                
+            }
             
         }
     }
