@@ -240,7 +240,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="presentation" id="zbJ-gG-eIF"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="presentation" id="zbJ-gG-eIF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

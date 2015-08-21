@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var companyLogo: UIImageView!
+    @IBOutlet weak var companyLogo: UIImageView!    
+    var gameArtwork:UIImage?
+
     
     @IBOutlet weak var titleLabel: UILabel!
 
@@ -18,13 +20,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var copyLabel: UILabel!
     
+    var copyData:String?
+    
+//    @IBOutlet weak var gameImage: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         self.titleLabel.text = titleData
-        self.copyLabel.text = "This is some text showing that we can update this on the fly"
+        self.copyLabel.text = copyData
+        self.companyLogo.image = gameArtwork
+        
+    
     }
 
     override func didReceiveMemoryWarning() {

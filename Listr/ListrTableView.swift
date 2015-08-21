@@ -12,7 +12,32 @@ class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelega
    
     @IBOutlet weak var tableView: UITableView!
   
-    var myFavouriteGames = ["Super Meat Boy","Doom","Super Mario Bros", "F Zero", "Grand Theft Auto","Donkey Kong Tropical Freeze","Last of Us","Batman Arkham Asylum","Anything but Catan"]
+    var myFavouriteGames = [
+        "Super Meat Boy",
+        "Doom",
+        "Super Mario Bros",
+        "F Zero",
+        "Grand Theft Auto",
+        "Donkey Kong Tropical Freeze"
+    ]
+    
+    var myFavGamesDetails = [
+        "Parents need to know that Super Meat Boy is an extremely difficult side-scrolling platformer game loaded with bright red blood and lots of toilet humor.",
+        "Parents need to know that the level of fear, blood, gore, and violence makes this game a poor choice for kids of all ages.",
+        "Parents need to know that New Super Mario Bros. 2 is a typical Mario platformer game. Mario engages in a bit of mild violence -- hopping on enemies to flatten them, shooting fireballs -- but it's directed toward cartoonish, mindless, decidedly non-human enemies.",
+        "Parents need to know that this cartoon features recklessness, speeding, aggressive driving, and violence through car crashes. Characters are quick to issue challenges and lose their temper. ",
+        "Parents need to know that Grand Theft Auto V is an M-rated action game brimming with gang violence, nudity, extremely coarse language, and drug and alcohol abuse. It isn't a game for kids. ",
+        "Parents need to know Donkey Kong Country: Tropical Freeze is a cartoonish platformer exclusive to Wii U. Donkey Kong and his cronies hop on enemies' heads or barrel through them with monkey rolls, knocking them out and making them fall off the screen or disappear. Pretty mild stuff. "
+    ]
+    
+    var myFavGamesImages = [
+        "supermeatboy",
+        "doom",
+        "supermario",
+        "fzero",
+        "gta4",
+        "DKtropicalfreeze"
+    ]
     
 //    var titleData:String?
     
@@ -97,6 +122,10 @@ class ListrTableView: UIViewController, UITableViewDataSource, UITableViewDelega
             if let destinationVC = segue.destinationViewController as? ViewController {
                 if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell){
                     destinationVC.titleData = myFavouriteGames[indexPath.row]
+                    destinationVC.copyData = myFavGamesDetails[indexPath.row]
+                    let currentGameImage = UIImage(named: myFavGamesImages[indexPath.row])
+                    destinationVC.gameArtwork = currentGameImage
+                
                 }
                 
             }
